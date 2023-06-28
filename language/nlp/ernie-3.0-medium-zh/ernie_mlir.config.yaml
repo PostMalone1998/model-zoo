@@ -54,7 +54,7 @@ BM1684X:
         --quantize_table $(home)/ernie-3.0-medium-zh.qtable
         --chip $(target)
         --model $(workdir)/$(name)_bm1684x_int8_asym.bmodel
-        --tolerance 0.8,0.5
+        --tolerance 0.8,0.4
         --test_input $(workdir)/$(name)_in_f32.npz
         --test_reference $(workdir)/$(name)_top_outputs.npz
 
